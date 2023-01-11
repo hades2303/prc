@@ -114,3 +114,21 @@ SELECT NAME, PHONE, DOB FROM SALESPERSON WHERE NAME
 LIKE 'A%'; SELECT AREA, COUNT(*) FROM SALESPERSON GROUP BY AREA;
 
 SELECT DISTINCT(AREA) FROM SALESPERSON;
+
+
+set 5 
+create table furniture(fcode varchar(6),name varchar(26),price int(9),manufdate date,wcode varchar(9));
+insert into furniture values(10023,'coffe table',4000,'2016-12-19','w03');
+insert into furniture values(10001,'dining table',20500,'2017-01-12','w01');
+insert into furniture values(10012,'sofa',35000,'2016-06-06','w01');
+insert into furniture values(10024,'chair',2500,'2017-04-17','w03');
+insert into furniture values(10090,'cabinet',18000,'2015-03-31','w02');
+select * from furniture; 
+select fcode, name, price from furniture  where price<5000 ;
+select name, price from furniture  where name like'%table%';
+select fcode, name from furniture order by fcode desc;
+select wcode, max(price) from furniture group by wcode;
+select * from furniture where price between 6800 and 20000;
+select count(distinct price) from furniture;
+select fcode, name, price from furniture where wcode='w02';
+
