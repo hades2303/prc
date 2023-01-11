@@ -132,6 +132,22 @@ select * from furniture where price between 6800 and 20000;
 select count(distinct price) from furniture;
 select fcode, name, price from furniture where wcode='w02';
 
+import pandas as pd
+import numpy as np
+s1=pd.Series([10,20,30],index=['a','b','c'])
+s2=pd.Series([2,5], index=['a','b'])
+print(s1)
+print(s2)
+print('---------------------------------------------------------------------')
+print(s1+s2)
+print('----------------------------------------------------------------------')
+print(s1-s2)
+print('-------------------------------------------------------------------------')
+print(s1*s2)
+print('---------------------------------------------------------------------------')
+print(s1/s2)
+print('--------------------------------------------------------------------------')
+print(s2/s1)
 
 
 
