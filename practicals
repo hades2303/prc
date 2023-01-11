@@ -52,4 +52,65 @@ plt.show()
 
 
 
+set 4
+import matplotlib.pyplot as plt
 
+Weeks=[1,2,3,4]
+onions=[45,25,32,80]
+brinjal=[16,28,15,50]
+
+plt.title('Sales Analysis')
+plt.ylabel('Weeks')
+plt.xlabel('Prices')
+
+plt.plot(Weeks,onions,marker='D',markersize=15,markeredgecolor='r')
+plt.plot(Weeks,brinjal)
+plt.show()
+
+****************************************************************************************************************
+
+
+
+
+import pandas as pe
+
+D= { 'Toys" : [7916, 8508, 7226 2617],
+
+'Babes [61896, 8208, 6149 6157), 'uni form: [ 610, 508, 611, 457],
+
+"Shoes" (8810, 6798, 9611, 64573}
+
+DF = pd.DataFrame(D, index=['AP','OD,'MP','UP'])
+
+print ("Toys:!")
+
+print(DF.loc[:, 'Toys']) 
+print ("\n")
+
+Print ("AP and OP")
+
+print (DF.loc["AP":"OD"])
+
+print ("\n")
+
+print ("The details of MP, UP")
+
+print (DF.loc['MP': 'Up', "Books": "uniform"])
+
+print("\n")
+
+print ("3rows, 3 Column")
+print (DF.iloc[0:3, 0:3])
+
+
+†*******************************
+SELECT NAME FROM SALESPERSON WHERE SALARY BETWEEN
+
+30000 AND 40000;
+
+SELECT NAME, SALARY FROM SALESPERSON ORDER BY SALARY DESC;
+
+SELECT NAME, PHONE, DOB FROM SALESPERSON WHERE NAME
+LIKE 'A%'; SELECT AREA, COUNT(*) FROM SALESPERSON GROUP BY AREA;
+
+SELECT DISTINCT(AREA) FROM SALESPERSON;
