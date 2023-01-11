@@ -1,0 +1,55 @@
+create table employee (empno int(4),ename varchar(20),job varchar(20),salary int(20),dojoin date ,department varchar (20));
+insert into employee values (1001 , 'scott', 'manager',90000,2010/10/01,'accounts');
+desc employee;
+select * from employee;
+insert into employee values (1002 , 'tom', 'clerk',34000,2010/10/01,'admin');
+insert into employee values (1003 , 'joy', 'clerk',32000,2010/10/01,'admin');
+insert into employee values (1004 , 'sam', 'salesman',40000,2010/10/01,'sales');
+
+
+desc employee;
+select *from employee;
+select * from employee where salary between 50000 and 100000;
+select sum (salary), avg (salary), count (department department from employee group by department; 
+select ename, date of-join, dayname from employee where department = 'Admin';
+
+Select from employee order by salary desc;
+
+Select * from employee where salary <45000;
+
+
+
+
+pandas
+
+import pandas as pd 
+D={'Toys': [ 7916, 8508, 1226, 7617],
+'Books': [61896, 8208, 6149, 6157],
+'Uniform': [610, 508, 611,461], 
+"Shoes": [8810, 6798, 9611, 646713]}
+DF=pd.DataFrame (D, index = [ "AP", "OD", "MP", "UP"])
+DF ['Bags'] = [5891, 8628,785, 4475]
+print ("After adding a new column:")
+print (DF)
+print ("/n")
+s= DF. drop ('MP')
+print ("After Deleting M.Pactails: ")
+print(s)
+
+matplotlib
+
+
+import matplotlib.pyplot as plt
+week = ['week1', 'week 2', 'week 3','week4', 'weeks']
+ct = [560, 480, 600, 245, 685]
+wt = [700, 480, 350, 625, 540]
+plt. plot (week, ct, marker = 'd')
+plt. plot (week, wt, marker = 'x')
+plt. title ('weekly garments orders')
+plt.xlabel('week')
+plt.ylabel('Orders')
+plt.show()
+
+
+
+
