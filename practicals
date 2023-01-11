@@ -132,3 +132,50 @@ select * from furniture where price between 6800 and 20000;
 select count(distinct price) from furniture;
 select fcode, name, price from furniture where wcode='w02';
 
+
+
+
+
+set 2
+impot pandas as pd 
+s=pd.series([95,89,92,95]), index=['ip','physics','chemistry','maths'])
+print(s)
+print(s.index[0])
+print(s+10)
+
+
+import matplotlib.pyplot as plt
+ran=[0,10,20,30,40,50,60]
+age=[23,46,38,25,52,47,32,19,21,18]
+plt.hist(age,bins=ran)
+plt.title('employee experience report')
+plt.xlabel('number of employee')
+plt.ylabel('experience')
+plt.show()
+
+
+
+
+
+select * from store order by lastbuy des;
+select itemno, item from store where rate>15;
+select * from store where qty >110;
+select * from store store where scode =22;
+select scode, min(rate) from store group by scode;
+select item, qty from store group where rate >15;
+select item, qty from store where rate >10;
+
+
+
+
+set1
+import pandas as pd S=
+
+print (s)
+
+Print (the first 4 values')
+
+Print (s.head (4))
+
+Print (s. tail (s))
+
